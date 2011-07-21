@@ -1,4 +1,4 @@
-RailsTutorial Chapter 08 Test-First Teaching Instructions
+RailsTutorial Chapters 08, 09 Test-First Teaching Instructions
 =========================================================
 
 Sign up

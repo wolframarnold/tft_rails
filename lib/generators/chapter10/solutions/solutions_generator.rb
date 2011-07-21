@@ -18,7 +18,7 @@ module Chapter10
         found_candidate = Dir.glob(File.join(Rails.root,'db','migrate','*_admin_*')).present?
 
         if (found_candidate &&
-            yes?("We found a migration file containing the word '_admin_'. We think you have the correct migration. Do you still way to copy the solution anyway?", :yellow)) \
+            yes?("We found a migration file containing the word '_admin_'. We think you have the correct migration. Do you still way to copy the solution anyway? (yes/no)", :yellow)) \
             or !found_candidate
 
           src  = File.expand_path("../snippets/migration_add_admin_to_users.rb", __FILE__)

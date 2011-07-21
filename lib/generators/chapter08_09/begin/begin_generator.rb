@@ -17,7 +17,7 @@ module Chapter08_09
         require 'rdiscount'
         
         instr_md = File.expand_path('../instructions.md',self.class.source_root)
-        dest = File.join(Rails.root,'doc','chapter08.html')
+        dest = File.join(Rails.root,'doc','chapter08_09.html')
         copy_file(instr_md, dest, :force => true) do |content|
           RDiscount.new(content).to_html
         end

@@ -2,11 +2,11 @@ Description:
     Wraps up Test-First Teaching exercises adapted from Chapter 08 of the RailsTutorial by Michael Hartl.
 
 Example:
-    rails generate chapter08_09:solutions
+    rails generate chapter10:solutions
 
     This copies the solutions and other necessary files (e.g. images, assets, helpers, etc.) into the project
-    to conclude Chapters 08, 09. This should make all tests pass and bring you in sync to the application at
-    the end of Chapters 08, 09.
+    to conclude Chapter 10. This should make all tests pass and bring you in sync to the application at
+    the end of Chapter 10.
 
     If you already have a solution file, you'll be prompted whether you want to overwrite your file,
     see the difference, or keep your file.
