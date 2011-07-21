@@ -1,5 +1,5 @@
 Description:
-    Wraps up Test-First Teaching exercises adapted from Chapter 08 of the RailsTutorial by Michael Hartl.
+    Wraps up Test-First Teaching exercises adapted from Chapter 10 of the RailsTutorial by Michael Hartl.
 
 Example:
     rails generate chapter10:solutions
