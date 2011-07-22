@@ -1,0 +1,23 @@
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+      <%# only if microposts exist, should the content below be rendered %>
+        <table class="microposts" summary="User microposts">
+          (The list of microposts should show up here, if there are any.)
+        </table>
+        <!--<%#= (pagination here, optional) %>-->
+      <%# end %>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @user.name %>
+      <br/>
+      <strong>URL</strong> <%= link_to user_path(@user.id), @user %>
+      <br/>
+      <strong>Microposts</strong> (The total count of Microposts should be here.)
+    </td>
+  </tr>
+</table>

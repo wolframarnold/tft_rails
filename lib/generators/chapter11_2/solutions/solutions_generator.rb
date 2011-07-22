@@ -1,4 +1,4 @@
-module Chapter11
+module Chapter11_2
   module Generators
     class SolutionsGenerator < Rails::Generators::Base
     end

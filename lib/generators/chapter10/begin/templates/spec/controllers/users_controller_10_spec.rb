@@ -72,10 +72,19 @@ describe UsersController do
     end
 
     describe "as a non-admin user" do
-      it "should protect the page" do
+      before do
         sign_in(@user)
+      end
+
+      it "should protect the page" do
         delete :destroy, :id => @user
         response.should redirect_to(root_path)
+      end
+
+      it 'should not destroy the user' do
+        expect {
+          delete :destroy, :id => @user
+        }.to_not change(User,:count)
       end
     end
 
