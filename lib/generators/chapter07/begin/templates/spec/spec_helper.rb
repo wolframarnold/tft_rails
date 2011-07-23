@@ -7,6 +7,16 @@ require 'rspec/rails'
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+Webrat.configure do |config|
+  config.mode = :rack
+end
+
+module Webrat::Logging
+  def logger
+    Rails.logger  # log to test.log, rather than webrat.log
+  end
+end
+
 RSpec.configure do |config|
   # == Mock Framework
   #

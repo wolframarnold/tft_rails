@@ -7,6 +7,13 @@ module Chapter07
         directory(self.class.source_root, Rails.root, :force => true)
       end
 
+      def insert_gitignore
+        dest = File.join(Rails.root,'.gitignore')
+        insert_into_file(dest, :before => /\Z/) do # insert before end
+          "\n.idea\n"
+        end
+      end
+
       def augment_gemfile
         gem 'devise', '~> 1.3.4'
         gem 'gravatar_image_tag', '~> 1.0.0'
