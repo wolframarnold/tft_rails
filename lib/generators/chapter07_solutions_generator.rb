@@ -1,7 +1,7 @@
-module Chapter07
+module TftRails
   module Generators
-    class SolutionsGenerator < Rails::Generators::Base
-      source_root File.expand_path("../templates", __FILE__)
+    class Chapter07SolutionsGenerator < Rails::Generators::Base
+      source_root File.expand_path("../templates_07_solutions", __FILE__)
 
       def copy_app_tree
         directory(self.class.source_root, Rails.root)

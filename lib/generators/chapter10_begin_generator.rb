@@ -1,7 +1,7 @@
-module Chapter10
+module TftRails
   module Generators
-    class BeginGenerator < Rails::Generators::Base
-      source_root File.expand_path("../templates", __FILE__)
+    class Chapter10BeginGenerator < Rails::Generators::Base
+      source_root File.expand_path("../templates_10_begin", __FILE__)
 
       def copy_app_tree
         directory(self.class.source_root, Rails.root)
@@ -13,13 +13,13 @@ module Chapter10
       end
 
       def insert_css
-        src  = File.expand_path("../snippets/custom.css", __FILE__)
+        src  = File.expand_path("../snippets_10_begin/custom.css", __FILE__)
         dest = File.join(Rails.root,'public','stylesheets','custom.css')
         insert_into_file(dest, File.binread(src), :before => /\Z/) # insert before end
       end
 
       def insert_factories
-        src  = File.expand_path("../snippets/factories.rb", __FILE__)
+        src  = File.expand_path("../snippets_10_begin/factories.rb", __FILE__)
         dest = File.join(Rails.root,'spec','factories.rb')
         insert_into_file(dest, File.binread(src), :before => /\Z/) # insert before end
       end
@@ -27,7 +27,7 @@ module Chapter10
       def generate_instructions
         require 'rdiscount'
         
-        instr_md = File.expand_path('../instructions.md',self.class.source_root)
+        instr_md = File.expand_path('../instructions_10.md',self.class.source_root)
         return unless File.exists?(instr_md)
         dest = File.join(Rails.root,'doc','chapter10.html')
         copy_file(instr_md, dest, :force => true) do |content|

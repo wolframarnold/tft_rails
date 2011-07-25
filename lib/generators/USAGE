@@ -1,0 +1,31 @@
+Description:
+    Generates Test-First Teaching exercises and solutions for chapters from RailsTutorial by Michael Hartl.
+
+    The idea of Test-First Teaching exercises is that students get a series
+    of tests which fail, and the exercise consists of students making the tests
+    pass by implementing code.
+
+    Each chapter comes with 2 generators: One to generate the tests and, in some
+    cases, also CSS and view files with placeholder content. The other to fill
+    in the solutions to make the specs pass for that chapter.
+
+    Each chapter also comes with an instruction file that's generated into the `doc`.
+
+    The generates for each chapter are assumed to be run in successive order.
+    Running the `solutions` generator is not necessary if all specs pass.
+
+Example:
+    rails generate tft_rails:chapter07_begin
+    rails generate tft_rails:chapter07_solutions
+
+    When running the solutions generator, it'll prompt before overwriting anything,
+    choose 'd' to view a diff, 'h' for more help.
+
+    Before running `solutions` or the next chapter's `begin` generator it is recommended
+    to commit the changes to source control. With git:
+
+    git add .
+    git commit -m "check in comment"
+
+
+

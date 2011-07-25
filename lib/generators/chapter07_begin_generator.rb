@@ -1,7 +1,7 @@
-module Chapter07
+module TftRails
   module Generators
-    class BeginGenerator < Rails::Generators::Base
-      source_root File.expand_path("../templates", __FILE__)
+    class Chapter07BeginGenerator < Rails::Generators::Base
+      source_root File.expand_path("../templates_07_begin", __FILE__)
 
       def copy_app_tree
         directory(self.class.source_root, Rails.root, :force => true)
@@ -26,7 +26,7 @@ module Chapter07
       def generate_instructions
         require 'rdiscount'
         
-        instr_md = File.expand_path('../instructions.md',self.class.source_root)
+        instr_md = File.expand_path('../instructions_07_begin.md',self.class.source_root)
         dest = File.join(Rails.root,'doc','chapter07.html')
         copy_file(instr_md, dest, :force => true) do |content|
           RDiscount.new(content).to_html

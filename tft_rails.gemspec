@@ -9,6 +9,6 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/wolframarnold/tft_rails"
   s.license = "MIT"
   s.files = Dir["{app,lib,config}/**/*"] + %w(LICENSE Rakefile Gemfile README.md .rvmrc .gitignore)
-  s.version = "0.6.2"
+  s.version = "0.7.0"
   s.add_dependency('rdiscount', '~> 1.6.8')
 end
