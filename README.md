@@ -72,6 +72,8 @@ all chapters and solutions in successive order and run the spec suite every time
 This may necessitate construction our own Test Runner or similar. I'm not
 sure how to do this.
 
+TODO: Add Chapter 12. The project currently contains Chapters 7 through 11, adapted for Devise.
+
 Sponsors
 --------
 
