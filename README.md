@@ -2,7 +2,7 @@ TFT Rails
 =========
 
 This project is a series of exercises for learning Rails, based on an adaptation of Michael Hartl's [RailsTutorial],
-using the [Test-First Teaching][tft] philosophy that was originally developed by [Sarah Allen and Alex Chaffee](tft_preso) and others.
+using the [Test-First Teaching][tft] philosophy that was originally [developed][tft_preso] by [Sarah Allen][sarah] and [Alex Chaffee][alex] and others.
 This project has been sponsored by [Marakana] and was authored by Wolfram Arnold in collaboration with Alex Chaffee.
 
 This project is a gem which provides a series of generators intended to be run on a bare-bones Rails 3 app. Each
@@ -81,6 +81,8 @@ This project has been underwritten by [Marakana] and developed by Wolfram Arnold
 
 [RailsTutorial]: http://railstutorial.org "Rails Tutorial"
 [tft]: http://testfirst.org/ "Test-First Teaching"
-[tft_perso]: http://www.slideshare.net/sarah.allen/test-first-teaching "TFT Presentation by Sarah Allen and Alex Chaffee"
+[tft_preso]: http://www.slideshare.net/sarah.allen/test-first-teaching "TFT Presentation by Sarah Allen and Alex Chaffee"
+[sarah]: http://blazingcloud.net "Sarah Allen, Founder of Blazing Cloud"
+[alex]: http://alexch.github.com/ "Alex Chaffee"
 [devise]: https://github.com/plataformatec/devise "Devise on Github"
 [Marakana]: http://marakana.com "Marakana.com"
