@@ -50,9 +50,16 @@ The Devise sign-in page meets our needs and doesn't need customizing.
 However, we need to work on the layout to make sure that it shows a "Sign out" link
 if a user is logged in, and a "Sign in" link only if a user is not logged in.
 
-[Devise][devise] offers the controller methods `user_signed_in?` and `current_user`
+[Devise][devise] offers the controller methods `signed_in?` and `current_user`
 to report on the current login status. The first method returns `true` or `false`
 depending on whether a user logged in, the second returns the actual user object,
 or `nil` if no user is logged in.
+
+(Note that Devise supports multiple sign-in scopes, e.g. for regular users and
+for admins. The method `signed_in?` checks that any scope is signed in. To
+check for a specific scope, the method `user_signed_in?` is available. For the
+purpose of RailsTutorial with Devise, this distinction is not important since
+we only have one type of user. Admin privileges are implemented differently,
+with the admin flag)
 
 [devise]: https://github.com/plataformatec/devise "Devise on github"

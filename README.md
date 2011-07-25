@@ -60,6 +60,18 @@ a wonderful job to illustrate many concepts for teaching, but it is no replaceme
 that has been peer-reviewed by many experienced developers and is in use in many commercial applications. Devise is the
 current industry standard solution and was used here.
 
+Adding to TFT Rails
+-------------------
+
+To modify the exercises, make your code changes, then run all chapters in
+successive order in a few rails app. After every solutions generator, the
+specs should run clean.
+
+TODO: Rig up a test suite which will create a new rails app, then install
+all chapters and solutions in successive order and run the spec suite every time.
+This may necessitate construction our own Test Runner or similar. I'm not
+sure how to do this.
+
 Sponsors
 --------
 

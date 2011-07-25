@@ -74,6 +74,7 @@ describe MicropostsController do
         wrong_user = Factory(:user, :email => Factory.next(:email))
         sign_in(wrong_user)
         @micropost = Factory(:micropost, :user => @user)
+        request.env["HTTP_REFERER"] = root_path
       end
 
       it "should deny access" do
